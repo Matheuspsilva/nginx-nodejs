@@ -1,7 +1,10 @@
 FROM node:15
 
 # Set the working directory in the container
-WORKDIR /var/www/html
+WORKDIR /usr/src/app
+
+# Copy the current directory contents into the container at /usr/src/app
+COPY . .
 
 # Install wget
 RUN apt-get install -y wget 
@@ -12,14 +15,7 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
     && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
-# Copy package.json and package-lock.json to install dependencies
-COPY package*.json ./
 
-# Install dependencies
-RUN npm install
-
-# Copy the current directory contents into the container at /usr/src/app
-COPY . .
 
 # Expose port 3000 to the outside world
 EXPOSE 3000

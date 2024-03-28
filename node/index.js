@@ -13,6 +13,15 @@ const connection = mysql.createConnection({
 });
 
 
+connection.connect((err) => {
+    if (err) {
+        console.error('Error connecting to the database: ', err);
+        return;
+    }
+    console.log('Connected to the database.');
+});
+
+
 connection.query('CREATE TABLE IF NOT EXISTS people (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255))', (err, results, fields) => {
     if (err) throw err;
     console.log('Table created or already exists.');
@@ -38,6 +47,11 @@ app.get('/', (req, res) => {
         });
         res.send('<h1>Full Cycle Rocks!</h1><br><br>List of names from the database:<br>' + names);
     });
+});
+
+
+app.get('/', (req, res) => {
+    res.send('<h1>Full Cycle Rocks!</h1><br><br>List of names from the database:<br>');
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
