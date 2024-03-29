@@ -3,7 +3,7 @@ version: '3'
 services:
 
   db:
-    image: mysql:5.7
+    image: mysql:5.7.44
     command: --innodb-use-native-aio=0
     container_name: db
     restart: always
@@ -13,12 +13,11 @@ services:
       - ./mysql:/var/lib/mysql
     environment:
       MYSQL_DATABASE: mydb
-      MYSQL_USER: root
       MYSQL_ROOT_PASSWORD: root
     ports:
       - '3306:3306'
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p$$MYSQL_ROOT_PASSWORD"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "root", "-proot"]
       interval: 5s
       timeout: 10s
       retries: 3
