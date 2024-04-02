@@ -36,6 +36,7 @@ services:
       - ./node:/usr/src/app
     ports:
       - 3000:3000
+    command: sh -c "npm install && npm start"
     depends_on:
       db:
         condition: service_healthy
@@ -52,6 +53,7 @@ services:
       - 8080:80
     depends_on:
       - app
+      - db
 
     networks:
       - node-network
