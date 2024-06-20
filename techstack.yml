@@ -1,0 +1,160 @@
+repo_name: Matheuspsilva/nginx-nodejs
+report_id: d8fcd7266be8833d90f3107e04002603
+version: 0.1
+repo_type: Public
+timestamp: '2024-06-20T13:02:52+00:00'
+requested_by: Matheuspsilva
+provider: github
+branch: main
+detected_tools_count: 12
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs
+  detection_source: Repo Metadata
+- name: ExpressJS
+  description: Sinatra inspired web development framework for node.js -- insanely
+    fast, flexible, and simple
+  website_url: http://expressjs.com/
+  version: 4.19.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/1163/hashtag.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/node/package-lock.json
+  detection_source: node/package.json
+  last_updated_by: Matheus Pereira
+  last_updated_on: 2024-03-23 19:56:48.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: Matheus Pereira
+  last_updated_on: 2024-03-23 19:56:48.000000000 Z
+- name: Cloud DB for Mysql
+  description: Easily setup and manage the MySQL database service
+  website_url: https://www.ncloud.com/product/database/cloudDbMysql
+  open_source: false
+  hosted_saas: true
+  category: Data Stores
+  sub_category: SQL Database as a Service
+  image_url: https://img.stackshare.io/service/21275/default_078eb0ae2b56280a937ed073a3ba4332291f9ba8.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: Matheuspsilva
+  last_updated_on: 2024-03-29 13:50:02.000000000 Z
+- name: DB
+  description: 'Version control for databases: save, restore, and archive snapshots
+    of your database from the command line'
+  website_url: https://github.com/infostreams/db
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/11593/no-img.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: Matheus Pereira
+  last_updated_on: 2024-03-23 19:56:48.000000000 Z
+- name: MySQL
+  description: The world's most popular open source database
+  website_url: http://www.mysql.com
+  version: 5.7.44
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1025/logo-mysql-170x170.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: Matheus Pereira
+  last_updated_on: 2024-03-23 19:56:48.000000000 Z
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs
+  detection_source: Repo Metadata
+- name: NGINX
+  description: A high performance free open source web server powering busiest sites
+    on the Internet.
+  website_url: http://nginx.org
+  open_source: false
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Web Servers
+  image_url: https://img.stackshare.io/service/1052/YMxUfyWf.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: Matheus Pereira
+  last_updated_on: 2024-03-23 19:56:48.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/node/package.json
+  detection_source: node/package.json
+  last_updated_by: Matheus Pereira
+  last_updated_on: 2024-03-23 19:56:48.000000000 Z
+- name: Alt
+  description: A library for managing data within JavaScript applications
+  website_url: https://alt.js.org/
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/3649/default_01276c9c0c79674b16f9b29216bd8cc7ce9b894d.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: Matheus Pereira
+  last_updated_on: 2024-03-23 19:56:48.000000000 Z
+- name: express
+  description: Fast, unopinionated, minimalist web framework
+  package_url: https://www.npmjs.com/express
+  version: 4.19.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/Matheuspsilva/nginx-nodejs/blob/main/node/package-lock.json
+  detection_source: node/package.json
+  last_updated_by: Matheus Pereira
+  last_updated_on: 2024-03-23 19:56:48.000000000 Z
